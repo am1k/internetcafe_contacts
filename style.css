@@ -3,6 +3,10 @@
     font-family: Vegur;
     src: url(fonts/Vegur-M_0600.otf);
 }
+html {
+    width: 100%;
+    height: 100%;
+}
 body {
     width: 100%;
     height: 100%;
@@ -18,7 +22,7 @@ body {
 }
 .header-content {
     overflow: hidden;
-    width: 1264px;
+    width: 940px;
     height: 115px;
     margin: 0 auto;
 }
@@ -26,13 +30,17 @@ body {
     width: 279px;
     height: 48px;
     float: left;
-    margin: 35px 0 0 165px;
+    margin: 35px 0 0 0;
+}
+.logo a {
+    display: inline-block;
+    height: 100%;
 }
 .nav-menu {
     height: 60px;
     float: right;
-    margin: 0 162px 0 0;
-    padding-top: 30px;
+    padding-top: 32px;
+    padding-right: 4px;
 }
 .menu {
     height: 50px;
@@ -42,34 +50,67 @@ body {
     border-right: 1px solid #e9e9e9;
     border-left: 1px solid #fff ;
     display: inline-block;
-    padding: 20px;
     margin: -2px;
+}
+.menu li span {
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-right: 1px solid #e9e9e9;
+    border-left: 1px solid #fff ;
+    display: inline-block;
+    margin: -2px;
+}
+.menu li span a {
+    color: #2ab5ba;
+}
+.menu li a {
+    display: inline-block;
+    padding: 20px;
 }
 .menu li:first-child {
     border-left: 1px solid transparent;
 }
 .menu li:last-child {
     border-right: 1px solid transparent;
-    padding: 20px;
 }
 .menu li:hover{
     display: inline-block;
-    padding: 20px;
     border: 1px solid #fff;
-    border-radius: 3px;
-    cursor: pointer;
     color: #2ab5ba;
+    cursor: pointer;
     background-color: #fff;
 }
+.menu li:first-child:hover {
+    display: inline-block;
+    border: 1px solid #fff;
+    color: #2ab5ba;
+    border-radius: 3px 0 0 3px;
+    cursor: pointer;
+    background-color: #fff;
+}
+.menu li:last-child:hover {
+    display: inline-block;
+    border: 1px solid #fff;
+    color: #2ab5ba;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+    background-color: #fff;
+}
+.menu li:hover a {
+    color: #2ab5ba;
+}
 #main {
-    width: 1264px;
+    width: 945px;
     margin: 0 auto;
+    margin-bottom: 63px;
     overflow: hidden;
+    min-height: 100%;
+    height: auto !important;
 }
 .main-content {
-    width: 665px;
+    width: 628px;
     float: left;
-    margin: 70px 0 0 162px;
+    margin-top: 69px;
 }
 .contact-form {
     overflow: hidden;
@@ -107,8 +148,7 @@ form label {
 .button {
     float: right;
     width: 120px;
-    padding-right: 40px;
-    padding-top: 28px;
+    padding-top: 34px;
 }
 #resetbtn {
     border: none;
@@ -133,9 +173,8 @@ form label {
     outline: none;
 }
 .right-sidebar {
-    width: 270px;
+    width: 265px;
     float: right;
-    margin-right: 153px;
     overflow: hidden;
 }
 .sidebar-head {
@@ -193,43 +232,55 @@ form label {
     height: 165px;
     background-repeat: repeat-x;
     overflow: hidden;
-    margin-top: 63px;
+    margin: 0 auto 0;
+    position: relative;
 }
 .footer-content {
     margin: 0 auto;
-    width: 1264px;
+    width: 940px;
     overflow: hidden;
 }
 .logo-footer {
     float: left;
     width: 194px;
     height: 48px;
-    margin: 42px 0 0 163px;
+    margin: 42px 0 0 0;
     border-right: 1px solid #e9e9e9;
     padding-right: 22px;
     padding-top: 20px;
 }
+.logo-footer a {
+    display: inline-block;
+    height: 100%;
+}
 .main-content-footer {
     margin: 42px 0 0 0;
     border-left: 1px solid #fff;
-    padding-left: 21px;
+    padding-left: 20px;
     padding-top: 13px;
     width: 400px;
     float: left;
 }
 .main-content-footer a {
     text-decoration: underline;
-    color:  #2ab5ba;
+    color: #2ab5ba;
 }
 .social-icons {
     width: 165px;
     float: right;
-    margin: 50px 258px 0 0;
+    margin: 50px 99px 0 0;
 }
-.social-icons P {
+.social-icons ul {
+    float: left;
+}
+.social-icons p {
     padding-top: 41px;
 }
 .social-icons li {
     padding-right: 10px;
     float: left;
+}
+.social-icons a {
+    display: inline-block;
+    width: 100%;
 }
